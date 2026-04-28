@@ -102,9 +102,6 @@ The SQLite database (`database.db`) is created automatically inside the `website
 - `user_id` — Foreign key to User
 
 ## Known Issues & Suggested Improvements
-
-- **Bug:** In `auth.py`, after sign-up, `login_user(user, ...)` is called with the uninitialized `user` variable instead of `new_user`. Change it to `login_user(new_user, remember=True)`.
-- **Security:** The `SECRET_KEY` in `__init__.py` is hardcoded — move it to an environment variable before deploying.
 - **Input sanitization:** Consider adding server-side sanitization for note content.
 - **Pagination:** Add pagination to the notes list for users with many notes.
 
