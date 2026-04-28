@@ -75,9 +75,6 @@ project/
    ```
 
 5. **Open in your browser**
-   ```
-   http://127.0.0.1:5000
-   ```
 
 The SQLite database (`database.db`) is created automatically inside the `website/` folder on first run.
 
